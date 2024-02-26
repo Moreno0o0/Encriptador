@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+
+<body onload="codicionInicial()">
+    <div>
+        <img src="logo3.png" id="logo">
+    </div>
+    <div>
+        <textarea wrap="soft" id="texto" name="texto" placeholder = "Ingrese texto aqui"></textarea>
+    </div>
+
+    <div id="botones" onmousemove="checartexto()">
+
+        <button onclick="encriptar()" class="boton" id="encriptar">Encriptar</button>
+        <button onclick="desencriptar()" class="boton" id="desencriptar">Desencriptar</button>
+
+    </div>
+
+    <div id="salida">
+
+        <img src="detective2.png" id="imgdetective">
+        <p id="notiSalida">Ningún mensaje fue <br> encontrado</p>
+        <textarea  wrap="soft" type="text" id="mensajeSalida" readonly ></textarea>
+
+    </div>
+
+    <script src="encriptador.js"></script>
+</body>
+
+<footer>
+    <img src="logo3.png" id="logocopy">
+    <p>Creada por <br> Juan Diego Moreno Lemus <br>&copy Copyright  del año 2024</p>
+</footer>
+
+</html>
